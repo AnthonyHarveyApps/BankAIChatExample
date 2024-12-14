@@ -6,6 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5F07A7CA2D0CC15E00072E51 /* BankAIChatExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F07A7C62D0CC15E00072E51 /* BankAIChatExampleApp.swift */; };
+		5F07A7CD2D0CC15E00072E51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F07A7C32D0CC15E00072E51 /* Preview Assets.xcassets */; };
+		5F07A7CE2D0CC15E00072E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F07A7C52D0CC15E00072E51 /* Assets.xcassets */; };
+		5F07A7D02D0CC19200072E51 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F07A7CF2D0CC19200072E51 /* ChatView.swift */; };
+		5F07A7D22D0CC1C300072E51 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F07A7D12D0CC1C300072E51 /* MessageBubble.swift */; };
+		5F07A7D42D0CC1F400072E51 /* CONSTANTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F07A7D32D0CC1F400072E51 /* CONSTANTS.swift */; };
+		5F07A7D72D0CC23700072E51 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F07A7D62D0CC23700072E51 /* Message.swift */; };
+		5F07A7D92D0CC25F00072E51 /* TransactionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F07A7D82D0CC25F00072E51 /* TransactionModels.swift */; };
+		5F07A7DB2D0CC2C500072E51 /* FeePredictionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F07A7DA2D0CC2C500072E51 /* FeePredictionModels.swift */; };
+		5F07A7DD2D0CC3B400072E51 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F07A7DC2D0CC3B400072E51 /* ChatViewModel.swift */; };
+		5F07A7DF2D0CC3F700072E51 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F07A7DE2D0CC3F700072E51 /* APIManager.swift */; };
+		5F33FCC92D0D04CE00DB7E52 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33FCC82D0D04CE00DB7E52 /* MainView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5F07A7A72D0CC14A00072E51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,22 +42,24 @@
 		5F07A7942D0CC14800072E51 /* BankAIChatExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankAIChatExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F07A7A62D0CC14A00072E51 /* BankAIChatExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAIChatExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F07A7B02D0CC14A00072E51 /* BankAIChatExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAIChatExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F07A7C32D0CC15E00072E51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5F07A7C52D0CC15E00072E51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F07A7C62D0CC15E00072E51 /* BankAIChatExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAIChatExampleApp.swift; sourceTree = "<group>"; };
+		5F07A7CF2D0CC19200072E51 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		5F07A7D12D0CC1C300072E51 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		5F07A7D32D0CC1F400072E51 /* CONSTANTS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CONSTANTS.swift; sourceTree = "<group>"; };
+		5F07A7D62D0CC23700072E51 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5F07A7D82D0CC25F00072E51 /* TransactionModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModels.swift; sourceTree = "<group>"; };
+		5F07A7DA2D0CC2C500072E51 /* FeePredictionModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeePredictionModels.swift; sourceTree = "<group>"; };
+		5F07A7DC2D0CC3B400072E51 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		5F07A7DE2D0CC3F700072E51 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		5F33FCC82D0D04CE00DB7E52 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5F07A7962D0CC14800072E51 /* BankAIChatExample */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BankAIChatExample;
-			sourceTree = "<group>";
-		};
 		5F07A7A92D0CC14A00072E51 /* BankAIChatExampleTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BankAIChatExampleTests;
-			sourceTree = "<group>";
-		};
-		5F07A7B32D0CC14A00072E51 /* BankAIChatExampleUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BankAIChatExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +92,8 @@
 		5F07A78B2D0CC14800072E51 = {
 			isa = PBXGroup;
 			children = (
-				5F07A7962D0CC14800072E51 /* BankAIChatExample */,
+				5F07A7C92D0CC15E00072E51 /* BankAIChatExample */,
 				5F07A7A92D0CC14A00072E51 /* BankAIChatExampleTests */,
-				5F07A7B32D0CC14A00072E51 /* BankAIChatExampleUITests */,
 				5F07A7952D0CC14800072E51 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +106,49 @@
 				5F07A7B02D0CC14A00072E51 /* BankAIChatExampleUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5F07A7C42D0CC15E00072E51 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5F07A7C32D0CC15E00072E51 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5F07A7C92D0CC15E00072E51 /* BankAIChatExample */ = {
+			isa = PBXGroup;
+			children = (
+				5F07A7C62D0CC15E00072E51 /* BankAIChatExampleApp.swift */,
+				5F33FCC82D0D04CE00DB7E52 /* MainView.swift */,
+				5F33FCCE2D0D159700DB7E52 /* ChatView */,
+				5F07A7DE2D0CC3F700072E51 /* APIManager.swift */,
+				5F07A7D32D0CC1F400072E51 /* CONSTANTS.swift */,
+				5F07A7D52D0CC22600072E51 /* Models */,
+				5F07A7C52D0CC15E00072E51 /* Assets.xcassets */,
+				5F07A7C42D0CC15E00072E51 /* Preview Content */,
+			);
+			path = BankAIChatExample;
+			sourceTree = "<group>";
+		};
+		5F07A7D52D0CC22600072E51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F07A7D62D0CC23700072E51 /* Message.swift */,
+				5F07A7D82D0CC25F00072E51 /* TransactionModels.swift */,
+				5F07A7DA2D0CC2C500072E51 /* FeePredictionModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5F33FCCE2D0D159700DB7E52 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				5F07A7CF2D0CC19200072E51 /* ChatView.swift */,
+				5F07A7DC2D0CC3B400072E51 /* ChatViewModel.swift */,
+				5F07A7D12D0CC1C300072E51 /* MessageBubble.swift */,
+			);
+			path = ChatView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +165,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				5F07A7962D0CC14800072E51 /* BankAIChatExample */,
 			);
 			name = BankAIChatExample;
 			packageProductDependencies = (
@@ -152,9 +208,6 @@
 			);
 			dependencies = (
 				5F07A7B22D0CC14A00072E51 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				5F07A7B32D0CC14A00072E51 /* BankAIChatExampleUITests */,
 			);
 			name = BankAIChatExampleUITests;
 			packageProductDependencies = (
@@ -212,6 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F07A7CD2D0CC15E00072E51 /* Preview Assets.xcassets in Resources */,
+				5F07A7CE2D0CC15E00072E51 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +291,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F07A7DB2D0CC2C500072E51 /* FeePredictionModels.swift in Sources */,
+				5F33FCC92D0D04CE00DB7E52 /* MainView.swift in Sources */,
+				5F07A7D02D0CC19200072E51 /* ChatView.swift in Sources */,
+				5F07A7D42D0CC1F400072E51 /* CONSTANTS.swift in Sources */,
+				5F07A7CA2D0CC15E00072E51 /* BankAIChatExampleApp.swift in Sources */,
+				5F07A7DF2D0CC3F700072E51 /* APIManager.swift in Sources */,
+				5F07A7D22D0CC1C300072E51 /* MessageBubble.swift in Sources */,
+				5F07A7D92D0CC25F00072E51 /* TransactionModels.swift in Sources */,
+				5F07A7DD2D0CC3B400072E51 /* ChatViewModel.swift in Sources */,
+				5F07A7D72D0CC23700072E51 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
