@@ -36,11 +36,11 @@ final class ChatViewModelTests: XCTestCase {
         await viewModel.sendMessage(userMessage: message)
         
         // Then
-        XCTAssertEqual(viewModel.messages.count, 4) // Initial + user + 2 bot responses
-        XCTAssertTrue(viewModel.messages[1].isUser)
-        XCTAssertFalse(viewModel.messages[2].isUser)
-        XCTAssertTrue(viewModel.messages[2].content.contains("Here are your recent transactions"))
-        XCTAssertTrue(viewModel.awaitingTheChoosingOfATransaction)
+        XCTAssertEqual(viewModel.messages.count, 4, "Expected 4 messages: initial message, user message, and 2 bot responses.")
+        XCTAssertTrue(viewModel.messages[1].isUser, "Second message should be from the user.")
+        XCTAssertFalse(viewModel.messages[2].isUser, "Third message should be a bot response.")
+        XCTAssertTrue(viewModel.messages[2].content.contains("Here are your recent transactions"), "Bot response should include 'Here are your recent transactions' text.")
+        XCTAssertTrue(viewModel.awaitingTheChoosingOfATransaction, "ViewModel should set awaitingTheChoosingOfATransaction to true after fetching transactions.")
     }
     
     func testHandleTransactionRequestFailure() async throws {
@@ -52,11 +52,11 @@ final class ChatViewModelTests: XCTestCase {
         await viewModel.sendMessage(userMessage: message)
         
         // Then
-        XCTAssertEqual(viewModel.messages.count, 3) // Initial + user + error message
-        XCTAssertTrue(viewModel.messages[1].isUser)
-        XCTAssertFalse(viewModel.messages[2].isUser)
-        XCTAssertTrue(viewModel.messages[2].content.contains("Sorry, I couldn't process your request"))
-        XCTAssertFalse(viewModel.awaitingTheChoosingOfATransaction)
+        XCTAssertEqual(viewModel.messages.count, 3, "Expected 3 messages: initial message, user message, and an error bot response.")
+        XCTAssertTrue(viewModel.messages[1].isUser, "Second message should be from the user.")
+        XCTAssertFalse(viewModel.messages[2].isUser, "Third message should be a bot response.")
+        XCTAssertTrue(viewModel.messages[2].content.contains("Sorry, I couldn't process your request"), "Bot response should include an error message indicating failure to process the request.")
+        XCTAssertFalse(viewModel.awaitingTheChoosingOfATransaction, "ViewModel should not set awaitingTheChoosingOfATransaction to true when API call fails.")
     }
     
     func testHandleTransferInquirySuccess() async throws {
@@ -69,9 +69,9 @@ final class ChatViewModelTests: XCTestCase {
         await viewModel.sendMessage(userMessage: message)
         
         // Then
-        XCTAssertEqual(viewModel.messages.count, 3) // Initial + user + bot response
-        XCTAssertTrue(viewModel.messages[1].isUser)
-        XCTAssertFalse(viewModel.messages[2].isUser)
-        XCTAssertTrue(viewModel.messages[2].content.contains("Here is some info"))
+        XCTAssertEqual(viewModel.messages.count, 3, "Expected 3 messages: initial message, user message, and a bot response.")
+        XCTAssertTrue(viewModel.messages[1].isUser, "Second message should be from the user.")
+        XCTAssertFalse(viewModel.messages[2].isUser, "Third message should be a bot response.")
+        XCTAssertTrue(viewModel.messages[2].content.contains("Here is some info"), "Bot response should include 'Here is some info' text.")
     }
 }
