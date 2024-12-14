@@ -3,7 +3,7 @@ SwiftUI, Swift Concurrency, SwiftData XCTests
 
 There is a gif below. It may take a few seconds to load in.
 
-![Bank AI Video](https://github.com/user-attachments/assets/f25de727-7f77-494a-86f3-97f68235f725)
+![Bank AI Video Slow](https://github.com/user-attachments/assets/2a0f7b92-c44b-47e7-8572-ed3c02048014)
 
 # Instructions:
 
