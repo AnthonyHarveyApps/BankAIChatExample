@@ -1,6 +1,8 @@
 # Bank AI Chat Code Example App
 SwiftUI, Swift Concurrency, SwiftData XCTests
 
+There is a gif below. It may take a few seconds to load in.
+
 ![Bank AI Video](https://github.com/user-attachments/assets/f25de727-7f77-494a-86f3-97f68235f725)
 
 # Instructions:
